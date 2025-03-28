@@ -1,0 +1,263 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: mlight;
+    src: url(fonts/Montsrratarm-Light.otf);
+}
+@font-face {
+    font-family: mmedium;
+    src: url(fonts/Montserratarm-Medium.otf);
+}
+
+
+.navcontainer {
+    display: flex;
+    align-items: center;
+    background-color: #E5A4AE;
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+}
+
+.inpage {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #E5A4AE;
+    cursor: pointer;
+    font-family: mmedium;
+    height: 60px;
+    width: 150px;
+}
+
+.notinpage {
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5A4AE;
+    color: black;
+    cursor: pointer;
+    font-family: mmedium;
+    height: 60px;
+    width: 150px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+.logocontainer {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.logocontainer img {
+    height: 250px;
+    width: auto;
+}
+
+/* Product Cards */
+.product-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #f8f8f8;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.cardimg {
+    all: unset;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin-top: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+}
+
+.card a {
+    all: unset;
+    display: flex;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: #E5A4AE;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 12px;    
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+.menucontainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+@media (max-width: 500px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on small devices */
+        max-width: 400px;
+    }
+
+    .card {
+        height: 200px;
+        width: 140px;
+    }
+
+    .logocontainer img {
+        height: 140px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on tablets */
+        max-width: 800px;
+    }
+
+    .card {
+        height: 300px;
+        width: 200px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    .product-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row on large devices */
+        max-width: 1200px;
+    }
+
+    .card {
+        height: 350px;
+        width: 250px;
+    }
+
+    .notinpage:hover {
+        color: #E5A4AE;
+        background-color: black;
+    
+    }
+
+}
+
+
+.submenu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #E5A4AE;
+    min-width: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    z-index: 10;
+}
+
+.submenu a {
+    all: unset;
+    display: block;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-family: mmedium;
+    transition: background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.submenu a:hover {
+    background-color: black;
+    color: #E5A4AE;
+}
+
+/* Показываем подменю при наведении */
+.submenu-container:hover .submenu {
+    display: flex;
+}
+
+
+@media (max-width: 500px) {
+    .submenu {
+        top: 50px;
+        min-width: 120px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+    .submenu {
+        top: 55px;
+        min-width: 130px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
