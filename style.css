@@ -200,13 +200,9 @@ img {
 
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        color-scheme: light; /* Принудительно указываем светлую схему */
-    }
 
     body {
         background-color: black;
-        color: white; /* если вдруг используешь текст без явного цвета */
     }
 
     .social {
@@ -216,10 +212,6 @@ img {
 
     .socialtext {
         color: black;
-    }
-
-    .imgcontainer {
-        background-color: transparent; /* или нужный фон */
     }
 }
 
