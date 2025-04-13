@@ -197,3 +197,29 @@ img {
 
     }
 }
+
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light; /* Принудительно указываем светлую схему */
+    }
+
+    body {
+        background-color: black;
+        color: white; /* если вдруг используешь текст без явного цвета */
+    }
+
+    .social {
+        background-color: pink;
+        color: black; /* если текст внутри .social, задай цвет */
+    }
+
+    .socialtext {
+        color: black;
+    }
+
+    .imgcontainer {
+        background-color: transparent; /* или нужный фон */
+    }
+}
+
