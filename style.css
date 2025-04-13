@@ -1,0 +1,194 @@
+body {
+    background-color: black;
+}
+
+
+
+@font-face {
+    font-family: mlite;
+    src: url(fonts/Montserratarm-Light.otf);
+}
+@font-face {
+    font-family: mmedium;
+    src: url(fonts/Montserratarm-Medium.otf);
+}
+@font-face {
+    font-family: gbold;
+    src: url(fonts/gotham_bold.otf);
+}
+@font-face {
+    font-family: gbook;
+    src: url(fonts/gotham_book.otf);
+}
+@font-face {
+    font-family: gmedium;
+    src: url(fonts/14012.otf);
+}
+
+
+
+
+
+
+.logocontainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+img {
+    height: 300px;
+    width: auto;
+}
+
+.socialcontainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.social {
+    all: unset;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 80px;
+    background-color: pink;
+    border-radius: 15px;
+    gap: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social:hover {
+    transform: scale(1.05);
+    
+}
+
+.imgcontainer {
+    display: flex;
+    margin-left: 20px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcontainer img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.socialtext {
+    margin-right: 20px;
+    font-family: gmedium;
+    font-size: 22px;
+}
+
+
+
+
+@media (max-width: 500px) and (min-width: 300px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+
+    }
+    img {
+        height: 150px;
+    }
+    
+    .socialcontainer {
+        margin-top: 24px;
+        gap: 12px;
+        margin-bottom: 24px;
+    }
+    
+    .social {
+        width: 300px;
+        height: 48px;
+        gap: 12px;
+        cursor: default;
+    }
+    
+    .social:hover {
+        transform: none;
+        
+    }
+    
+    .imgcontainer {
+        margin-left: 12px;
+        width: 30px;
+        height: 30px;
+
+    }
+    .socialtext {
+        margin-right: 12px;
+        font-size: 13.2px;
+    }
+}
+
+@media (max-width: 300px){
+    img{
+        height: 80px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+
+    }
+    
+    .socialcontainer {
+        margin-top: 14.8px;
+        gap: 7.4px;
+        margin-bottom: 14.8px;
+    }
+    
+    .social {
+        width: 185px;
+        height: 29.6px;
+        gap: 7.4px;
+        cursor: default;
+        border-radius: 10px;
+    }
+    
+    .social:hover {
+        transform: none;
+        
+    }
+    
+    .imgcontainer {
+        margin-left: 7.4px;
+        width: 18.5px;
+        height: 18.5px;
+
+    }
+    .socialtext {
+        margin-right: 7.4px;
+        font-size: 8.14px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1034px){
+    img{
+        height: 200px;
+
+    }
+}
